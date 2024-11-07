@@ -1,0 +1,50 @@
+<!--I love css and so im going all out for my final task, since all november stuff is data-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Graphed Temperature and Humidity</title>
+    <meta
+      name="Yay"
+      content="last task!!! (i have to go back on the last task i forgot to turn text area into table D:)"
+    />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="ThankGoodnessForPrettier.js"></script>
+    <link rel="stylesheet" href="coolcss.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="GraphedTempandHumidity.html">Graphed Temperature and Humidity</a>
+    </div>
+    <div class="FunTypingEffect">
+        <h1 class="text">GRAPHED TEMPERATURE AND HUMIDITY</h1>
+    </div>
+    <div class="container">
+      <div class="left">
+        <p>Enter the temperature in Celsius:</p>
+        <input type="text" id="temperature" />
+        <p>Enter the humidity percentage:</p>
+        <input type="text" id="humidity" />
+        <br>
+        <button class="add" onclick="addData()">Add</button>
+        <button class="clear" onclick="clearData()">Clear</button>
+        <h2>Temperature and Humidity Data</h3>
+        <table id="dataTable">
+          <thead>
+            <tr>
+              <th>Temperature (°C)</th>
+              <th>Humidity (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <div class="right">
+        <h2>Graph</h2>
+        <div id="temperatureGraph"></div>
+      </div>
+    </div>
+  </body>
+</html>
+
