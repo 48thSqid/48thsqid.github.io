@@ -4,9 +4,13 @@ var humidities = [];
 function addData() {
     const temp = document.getElementById("temperature").value;
     const humidity = document.getElementById("humidity").value;
+    if(temp == "" || humidity == ""){
+        alert("Please Enter Values")
+        return 1
+    }
     if(humidity < 0 || humidity > 100){
         alert("Humidity Invalid")
-        return
+        return 1
     }
     temperatures.push(temp);
     humidities.push(humidity);
