@@ -12,6 +12,10 @@ function addData() {
         alert("Humidity Invalid")
         return 1
     }
+    if(temp > 100 || temp < -100){
+        alert("Temperature Invalid")
+        return 1
+    }
     temperatures.push(temp);
     humidities.push(humidity);
 
@@ -50,7 +54,7 @@ function addData() {
 
     const layout = {
         title: 'Temperature and Humidity Over Time',
-        xaxis: { title: 'Data Point' },
+        xaxis: { title: 'Time' },
         yaxis: { title: 'Value' },
         plot_bgcolor: '#f0f0f0',
         paper_bgcolor: '#f0f0f0',
